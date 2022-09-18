@@ -8,11 +8,11 @@ import { EmpService } from '../emp.service';
 })
 export class TeslaComponent implements OnInit {
   tesla: any;
-  cartItems: any;
+  bookings: any;
 
   constructor(public service: EmpService) {
 
-    this.cartItems = [];
+    this.bookings = [];
 
     this.tesla = [
       {productId: 1006, productName: 'Tesla Model S ', price: '', imagePath: 'assets/images/img9.jpg',
@@ -33,10 +33,10 @@ export class TeslaComponent implements OnInit {
     ngOnInit(): void {
     }
     addToCart(teslaproduct: any) {
-      this.cartItems.push(teslaproduct);
-      localStorage.setItem('cartItems', JSON.stringify(this.cartItems));
+      this.bookings.push(teslaproduct);
+      localStorage.setItem('bookings', JSON.stringify(this.bookings));
   
-      this.service.addToCart(teslaproduct);
+      this.service.bookings(teslaproduct);
     }
   
   

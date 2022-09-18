@@ -8,11 +8,11 @@ import { EmpService } from '../emp.service';
 })
 export class BugattiComponent implements OnInit {
   bugatti: any;
-  cartItems: any;
+  bookings: any;
 
   constructor(public service: EmpService) {
 
-    this.cartItems = [];
+    this.bookings = [];
 
     this.bugatti = [
       {productId: 1006, productName: 'Bugatti Chiron', price: '', imagePath: 'assets/images/img19.jpg',
@@ -27,8 +27,8 @@ export class BugattiComponent implements OnInit {
     ngOnInit(): void {
     }
     addToCart(bugattiproduct: any) {
-      this.cartItems.push(bugattiproduct);
-      localStorage.setItem('cartItems', JSON.stringify(this.cartItems));
+      this.bookings.push(bugattiproduct);
+      localStorage.setItem('cartItems', JSON.stringify(this.bookings));
   
       this.service.addToCart(bugattiproduct);
     }

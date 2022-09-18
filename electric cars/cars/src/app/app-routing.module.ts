@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthGuard } from './auth.guard';
 import { BmwComponent } from './bmw/bmw.component';
 import { BugattiComponent } from './bugatti/bugatti.component';
-import { CartComponent } from './cart/cart.component';
+import { BookingComponent } from './booking/booking.component';
 import { LoginComponent } from './login/login.component';
 import { PorscheComponent } from './porsche/porsche.component';
 import { ProductsComponent } from './products/products.component';
@@ -17,7 +17,7 @@ const routes: Routes = [
   {path:'register', component:RegisterComponent},
   {path:'showemp', canActivate:[AuthGuard], component:ShowemployeesComponent},
   {path:'products', canActivate:[AuthGuard], component:ProductsComponent},
-  {path:'cart', canActivate:[AuthGuard], component:CartComponent},
+  {path:'booking', canActivate:[AuthGuard], component:BookingComponent},
   {path:'tesla', component: TeslaComponent },
   {path: 'bmw', component: BmwComponent},
   {path: 'bugatti', component: BugattiComponent},

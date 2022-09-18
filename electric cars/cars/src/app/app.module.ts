@@ -16,7 +16,7 @@ import { AgePipe } from './age.pipe';
 import { HeaderComponent } from './header/header.component';
 import { RegisterComponent } from './register/register.component';
 import { ProductsComponent } from './products/products.component';
-import { CartComponent } from './cart/cart.component';
+import { BookingComponent } from './booking/booking.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { TeslaComponent } from './tesla/tesla.component';
@@ -38,7 +38,7 @@ import { PorscheComponent } from './porsche/porsche.component';
     HeaderComponent,
     RegisterComponent,
     ProductsComponent,
-    CartComponent,
+    BookingComponent,
     TeslaComponent,
     BmwComponent,
     BugattiComponent,

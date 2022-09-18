@@ -7,18 +7,18 @@ import { Subject } from 'rxjs';
 export class EmpService {
 
   isUserLogged: boolean;
-  cartItems: any;
+  bookings: any;
   productToBeAdded: Subject<any>;
 
   constructor() { 
-    this.cartItems = [];
+    this.bookings = [];
     this.isUserLogged = false;
     this.productToBeAdded = new Subject();
   }
 
   addToCart(product: any) {
     this.productToBeAdded.next(product);
-    this.cartItems.push(product);
+    this.bookings.push(product);
   }
 
   getForCart() {

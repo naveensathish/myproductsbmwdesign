@@ -9,11 +9,11 @@ import { EmpService } from '../emp.service';
 export class PorscheComponent implements OnInit {
 
   porsche: any;
-  cartItems: any;
+  bookings: any;
 
   constructor(public service: EmpService) {
 
-    this.cartItems = [];
+    this.bookings = [];
 
     this.porsche = [
       {productId: 1006, productName: 'Porsche 911 Turbo S ', price: '', imagePath: 'assets/images/p1.jpg',
@@ -32,8 +32,8 @@ export class PorscheComponent implements OnInit {
     ngOnInit(): void {
     }
     addToCart(porscheproduct: any) {
-      this.cartItems.push(porscheproduct);
-      localStorage.setItem('cartItems', JSON.stringify(this.cartItems));
+      this.bookings.push(porscheproduct);
+      localStorage.setItem('cartItems', JSON.stringify(this.bookings));
   
       this.service.addToCart(porscheproduct);
     }

@@ -8,11 +8,11 @@ import { EmpService } from '../emp.service';
 })
 export class BmwComponent implements OnInit {
   bmw: any;
-  cartItems: any;
+  bookings: any;
 
   constructor(public service: EmpService) {
 
-    this.cartItems = [];
+    this.bookings = [];
 
     this.bmw = [
       {productId: 1006, productName: 'BMW i4 ', price: '', imagePath: 'assets/images/img14.jpg',
@@ -30,8 +30,8 @@ export class BmwComponent implements OnInit {
   ngOnInit(): void {
   }
   addToCart(bmwproduct: any) {
-    this.cartItems.push(bmwproduct);
-    localStorage.setItem('cartItems', JSON.stringify(this.cartItems));
+    this.bookings.push(bmwproduct);
+    localStorage.setItem('cartItems', JSON.stringify(this.bookings));
 
     this.service.addToCart(bmwproduct);
   }
