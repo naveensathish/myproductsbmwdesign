@@ -1,0 +1,25 @@
+
+<h3 align="center" (click)="showCartItems()"> <button> My Cart  </button> </h3>
+<h2 align="center"> Items in Cart {{cartItems.length}} </h2> <br/><br/>
+
+<div class="container">
+    <table class="table border table-border table-striped table-hover table-sm text-center">
+        <thead>
+            <tr class="bg-info text-white">
+                <th> ID </th>
+                <th> Name </th>
+                <th> Description </th>
+                <th> Price </th>                
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="let item of cartItems">
+                <td> {{item.productId}} </td>
+                <td> {{item.productName}} </td>
+                <td> {{item.description}} </td>
+                <td> {{item.price | currency:'INR'}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

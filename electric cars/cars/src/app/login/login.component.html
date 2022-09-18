@@ -1,0 +1,52 @@
+<!--
+Enter Login ID : <input type="text" [(ngModel)] = "lId" /> <br/>
+Enter Password : <input type="password" [(ngModel)] = "pwd" /> <br/> <br/>
+<button (click)="loginSubmit()"> Login </button>
+-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<h2 align="center"> Sign in </h2> <br/>
+
+<div class="container">
+<form #loginForm="ngForm" (ngSubmit)="submitForm(loginForm.value)" class="form-group" novalidate>
+
+<div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+    <input type="text" name="loginId"  ngModel #loginId=ngModel  required minlength="2" maxlength="15" class="form-control"/> <br/>
+</div>
+
+<div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+    <input type="password" name="password" ngModel #password=ngModel required minlength="2" maxlength="15" class="form-control"/> <br/>
+</div>
+
+<button class="btn btn-primary" [disabled]="!loginForm.valid"> Login </button>
+</form>
+
+<div *ngIf="loginId.errors?.['required']  && loginId.touched"> Please Enter Data into the LoginID Field </div>
+<div *ngIf="loginId.errors?.['minlength'] && loginId.touched"> Please Enter atleast 2 characters </div>
+
+<div *ngIf="password.errors?.['required']  && password.touched"> Please Enter Data into the password Field </div>
+<div *ngIf="password.errors?.['minlength'] && password.touched"> Please Enter atleast 2 characters </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
