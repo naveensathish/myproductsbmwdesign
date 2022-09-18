@@ -15,10 +15,10 @@ export class BugattiComponent implements OnInit {
     this.cartItems = [];
 
     this.bugatti = [
-      {productId: 1006, productName: 'Bugatti ', price: '', imagePath: 'assets/images/img19.jpg',
+      {productId: 1006, productName: 'Bugatti Chiron', price: '', imagePath: 'assets/images/img19.jpg',
       description: ' '},
 
-      {productId: 1006, productName: 'Bugatti ', price: '', imagePath: 'assets/images/img20.jpg',
+      {productId: 1006, productName: 'Bugatti Divo', price: '', imagePath: 'assets/images/img20.jpg',
       description: ' '},
 
     ];

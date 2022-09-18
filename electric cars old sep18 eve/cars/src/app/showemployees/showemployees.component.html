@@ -1,0 +1,39 @@
+
+<div class="container">
+<button class="btn btn-primary" (click)="showUser()"> Show User </button> <br/><br/>
+
+Welcome: {{empName}} !
+
+</div>
+<br/><br/>
+
+
+<h2 align="center"> Customer Data </h2>
+
+<div class="container">
+<table class="table border table-border table-striped table-hover table-sm text-center">
+    <thead>
+        <tr class="bg-info text-white">
+            <th> EmpId </th>
+            <th> Name </th>
+            <th> Salary </th>
+            <th> Gender </th>
+            <th> Date Of Join </th>
+            <th> LoginId </th>
+            <th> Experience </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let emp of employees">
+              <td> {{emp.empId}} </td>
+             <td align="left"> {{emp.empName | uppercase | gender: emp.gender}} </td>
+             <td> {{emp.salary  | currency:'USD'}} </td>
+             <td> {{emp.gender  | lowercase}} </td>
+             <td align="left"> {{emp.doj     | date:'dd-MMM-yyyy'}} </td>
+             <td align="left"> {{emp.loginId | lowercase}} </td>        
+             <td> {{emp.doj     | exp}} </td>
+        </tr>
+    </tbody>
+</table>
+</div>

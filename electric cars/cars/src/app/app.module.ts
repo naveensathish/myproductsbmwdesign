@@ -22,6 +22,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { TeslaComponent } from './tesla/tesla.component';
 import { BmwComponent } from './bmw/bmw.component';
 import { BugattiComponent } from './bugatti/bugatti.component';
+import { PorscheComponent } from './porsche/porsche.component';
 
 @NgModule({
   declarations: [
@@ -41,12 +42,14 @@ import { BugattiComponent } from './bugatti/bugatti.component';
     TeslaComponent,
     BmwComponent,
     BugattiComponent,
+    PorscheComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,            
-    RouterModule
+    RouterModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

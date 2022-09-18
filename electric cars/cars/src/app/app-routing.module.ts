@@ -5,6 +5,7 @@ import { BmwComponent } from './bmw/bmw.component';
 import { BugattiComponent } from './bugatti/bugatti.component';
 import { CartComponent } from './cart/cart.component';
 import { LoginComponent } from './login/login.component';
+import { PorscheComponent } from './porsche/porsche.component';
 import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 import { ShowemployeesComponent } from './showemployees/showemployees.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'cart', canActivate:[AuthGuard], component:CartComponent},
   {path:'tesla', component: TeslaComponent },
   {path: 'bmw', component: BmwComponent},
-  {path: 'bugatti', component: BugattiComponent}
+  {path: 'bugatti', component: BugattiComponent},
+  {path: 'porsche', component: PorscheComponent}
 ];
 
 
