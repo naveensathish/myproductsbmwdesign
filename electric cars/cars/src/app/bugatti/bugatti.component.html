@@ -1,16 +1,15 @@
 
-<h1 align="center"> My Products </h1> <br/>
-<div class="container" style="background-color: black;">
-    <div class="row md-10">
-        <div class="col-xl-10" *ngFor="let bugattiproduct of bugatti">
-            <div class="card" style="width: 1120px; height:100%">
+<h1 align="center" style="color: white ;"> Bugatti </h1> <br/>
+<div class="container" style="background-color: black; border:0px solid black;">
+    <div class="row md-10" style="background-color: black; border:0px solid black;">
+        <div class="col-xl-10" *ngFor="let bugattiproduct of bugatti" style="background-color: black; border:0px solid black;">
+            <div class="card" style="width: 1120px; height:100%;background-color: black; border:0px solid black;">
                 <img class="card-image" [src]=bugattiproduct.imagePath alt="Card Image Cap"/>
-                <div class="card-body">
-                    <h3 class="card-title" style="text-align: center;"> {{bugattiproduct.productName}} </h3>                    
-                    <p class="card-text"> {{bugattiproduct.description}} </p>
-                    <h4 class="card-text" align="left"> {{bugattiproduct.price | currency:'INR'}} </h4>
+                <div class="card-body" style="background-color: black; border:0px solid black;">
+                    <h3 class="card-title" style="text-align: center;color: white;;"> {{bugattiproduct.productName}} </h3>                    
+                    <p class="card-text" style="color: white;"> {{bugattiproduct.description}} </p>
                     <p align="right">
-                    <button class="btn btn-primary" (click)="addToCart(bugattiproduct)"> Add to Cart </button>
+                    <button class="btn btn-black" style="color: white;"> BOOK A TEST DRIVE </button>
                 </p>
                 </div>
             </div>            

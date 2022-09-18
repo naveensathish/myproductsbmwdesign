@@ -14,20 +14,22 @@
 -->
 
 <app-header></app-header>
-<marquee><h1> Tesla </h1></marquee>
-<div class ="content" role ="main" style="background-color: black;display: flex; justify-content: center;">
-    <button (click)="goTopage('tesla')">TeslaPage</button>
+<marquee><h1>  </h1></marquee>
+<div class ="content" role ="main" style="display: flex;">
+ <!-- <button style="min-width: 100px; max-width: 100px;" (click)="goTopage('tesla')">Tesla</button>-->
+<button style="min-width: 100px; max-width: 100px; color: white" class ="btn btn-black" (click)="goTopage('tesla')"> Tesla</button>
+
   </div>
   <router-outlet></router-outlet>
 
 
-  <div class ="content" role ="main" style="background-color: black;">
-    <button (click)="goTopage('bmw')">bmwPage</button>
+  <div class ="content" role ="main" style="display: flex;">
+    <button style="min-width: 100px; max-width: 100px; color: white" class ="btn btn-black" (click)="goTopage('bmw')">BMW</button>
   </div>
 <router-outlet></router-outlet>
 
 
-<div class ="content" role ="main" style="background-color: black;">
-  <button (click)="goTopage('bugatti')">bugattiPage</button>
+<div class ="content" role ="main" style="display: flex; ">
+  <button style="min-width: 100px; max-width: 100px; color: white" class ="btn btn-black" (click)="goTopage('bugatti')">BUGATTI</button>
 </div>
 <router-outlet></router-outlet>

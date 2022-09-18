@@ -15,8 +15,12 @@ export class BugattiComponent implements OnInit {
     this.cartItems = [];
 
     this.bugatti = [
-      {productId: 1006, productName: 'Bugatti Chiron ', price: 777999.99, imagePath: 'assets/images/img7.jpg',
-      description: ' 21-inch rear alloy wheels'},
+      {productId: 1006, productName: 'Bugatti ', price: '', imagePath: 'assets/images/img19.jpg',
+      description: ' '},
+
+      {productId: 1006, productName: 'Bugatti ', price: '', imagePath: 'assets/images/img20.jpg',
+      description: ' '},
+
     ];
 
     }

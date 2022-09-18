@@ -1,0 +1,33 @@
+
+<!--
+<app-test2></app-test2>
+<app-student></app-student>
+<app-login></app-login>
+<app-login></app-login>
+<app-showemployees></app-showemployees>
+<app-login></app-login>
+<app-register></app-register>
+<app-showemployees></app-showemployees>
+<app-products></app-products>
+<br/><br/>
+<app-cart></app-cart>
+-->
+
+<app-header></app-header>
+<marquee><h1> Tesla </h1></marquee>
+<div class ="content" role ="main" style="background-color: black;display: flex; justify-content: center;">
+    <button (click)="goTopage('tesla')">TeslaPage</button>
+  </div>
+  <router-outlet></router-outlet>
+
+
+  <div class ="content" role ="main" style="background-color: black;">
+    <button (click)="goTopage('bmw')">bmwPage</button>
+  </div>
+<router-outlet></router-outlet>
+
+
+<div class ="content" role ="main" style="background-color: black;">
+  <button (click)="goTopage('bugatti')">bugattiPage</button>
+</div>
+<router-outlet></router-outlet>

@@ -15,8 +15,15 @@ export class BmwComponent implements OnInit {
     this.cartItems = [];
 
     this.bmw = [
-      {productId: 1005, productName: 'BMW M8', price: 179999.99, imagePath: 'assets/images/img5.jpg',
-      description: '21-inch rear alloy wheels '}
+      {productId: 1006, productName: 'BMW i4 ', price: '', imagePath: 'assets/images/img14.jpg',
+      description: ' '},
+
+      {productId: 1006, productName: 'BMW i7 ', price: '', imagePath: 'assets/images/img15.jpg',
+      description: ' '},
+
+      {productId: 1006, productName: 'BMW IX', price: '', imagePath: 'assets/images/img17.jpg',
+      description: ' '},
+
     ];
 
     }
