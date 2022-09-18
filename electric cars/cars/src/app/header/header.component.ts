@@ -8,10 +8,10 @@ import { EmpService } from '../emp.service';
 })
 export class HeaderComponent implements OnInit {
 
-  cartItems: any;
+  bookings: any;
   constructor(public service: EmpService) { 
-    this.cartItems = [];
-    this.service.getForCart().subscribe((result: any) => {this.cartItems.push(result), console.log(result)} );
+    this.bookings = [];
+    this.service.getForCart().subscribe((result: any) => {this.bookings.push(result), console.log(result)} );
   }
 
   ngOnInit(): void {

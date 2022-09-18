@@ -17,14 +17,13 @@ export class PorscheComponent implements OnInit {
 
     this.porsche = [
       {productId: 1006, productName: 'Porsche 911 Turbo S ', price: '', imagePath: 'assets/images/p1.jpg',
-      description: ' Battery: 93.4 kWh 800 V lithium-ion', },
-
+      description1: 'Battery: 93.4 kWh 800 V lithium-ion', description2: 'Dimensions: 4,963 mm L x 1,966 mm W x 1,378 mm H' },
 
       {productId: 1006, productName: 'Porsche 911 GT2 RS ', price: '', imagePath: 'assets/images/p2.jpg',
-      description: 'Battery: 93.4 kWh 800 V lithium-ion'},
+      description1: 'Battery: 93.4 kWh 800 V lithium-ion', description2: 'Dimensions: 4,963 mm L x 1,966 mm W x 1,378 mm H'},
 
       {productId: 1006, productName: 'Porsche Taycan Turbo S', price: '', imagePath: 'assets/images/p3.jpg',
-      description: 'Battery: 93.4 kWh 800 V lithium-ion'},
+      description1: 'Battery: 93.4 kWh 800 V lithium-ion', description2: 'Dimensions: 4,963 mm L x 1,966 mm W x 1,378 mm H'},
 
     ];
 

@@ -23,6 +23,7 @@ import { TeslaComponent } from './tesla/tesla.component';
 import { BmwComponent } from './bmw/bmw.component';
 import { BugattiComponent } from './bugatti/bugatti.component';
 import { PorscheComponent } from './porsche/porsche.component';
+import { MercedesComponent } from './mercedes/mercedes.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { PorscheComponent } from './porsche/porsche.component';
     BmwComponent,
     BugattiComponent,
     PorscheComponent,
+    MercedesComponent,
   ],
   imports: [
     BrowserModule,

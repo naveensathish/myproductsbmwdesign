@@ -10,6 +10,7 @@ import { ProductsComponent } from './products/products.component';
 import { RegisterComponent } from './register/register.component';
 import { ShowemployeesComponent } from './showemployees/showemployees.component';
 import { TeslaComponent } from './tesla/tesla.component';
+import { MercedesComponent } from './mercedes/mercedes.component';
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path:'tesla', component: TeslaComponent },
   {path: 'bmw', component: BmwComponent},
   {path: 'bugatti', component: BugattiComponent},
-  {path: 'porsche', component: PorscheComponent}
+  {path: 'porsche', component: PorscheComponent},
+  {path: 'mercedes', component: MercedesComponent}
 ];
 
 

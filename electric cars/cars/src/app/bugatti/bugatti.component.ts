@@ -16,10 +16,10 @@ export class BugattiComponent implements OnInit {
 
     this.bugatti = [
       {productId: 1006, productName: 'Bugatti Chiron', price: '', imagePath: 'assets/images/img19.jpg',
-      description: ' '},
+      description1: 'Battery: 93.4 kWh 800 V lithium-ion', description2: 'Dimensions: 4,963 mm L x 1,966 mm W x 1,378 mm H'},
 
       {productId: 1006, productName: 'Bugatti Divo', price: '', imagePath: 'assets/images/img20.jpg',
-      description: ' '},
+      description1: 'Battery: 93.4 kWh 800 V lithium-ion', description2: 'Dimensions: 4,963 mm L x 1,966 mm W x 1,378 mm H'},
 
     ];
 
