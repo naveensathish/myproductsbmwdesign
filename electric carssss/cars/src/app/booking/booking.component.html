@@ -1,0 +1,26 @@
+
+<h3 align="center" (click)="showCartItems()"> <button> My bookings  </button> </h3>
+<h2 align="center"> Booked Test Drives {{bookings.length}} </h2> <br/><br/>
+
+<div class="container">
+    <table class="table border table-border table-striped table-hover table-sm text-center">
+        <thead>
+            <tr class="bg-info text-white">
+                <th> ID </th>
+                <th> Name </th>
+                <th> Description </th>
+                <th> Price </th>                
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr *ngFor="let booking of bookings">
+                <td> {{booking.productId}} </td>
+                <td> {{booking.productName}} </td>
+                <td> {{booking.description}} </td>
+             <!--   <td> {{booking.price | currency:'INR'}} </td> -->
+             <td> {{booking.price}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

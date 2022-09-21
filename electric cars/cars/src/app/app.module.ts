@@ -24,6 +24,8 @@ import { BmwComponent } from './bmw/bmw.component';
 import { BugattiComponent } from './bugatti/bugatti.component';
 import { PorscheComponent } from './porsche/porsche.component';
 import { MercedesComponent } from './mercedes/mercedes.component';
+import { LamboComponent } from './lambo/lambo.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { MercedesComponent } from './mercedes/mercedes.component';
     BugattiComponent,
     PorscheComponent,
     MercedesComponent,
+    LamboComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

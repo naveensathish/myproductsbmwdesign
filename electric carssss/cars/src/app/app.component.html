@@ -1,0 +1,45 @@
+
+<!--
+<app-test2></app-test2>
+<app-student></app-student>
+<app-login></app-login>
+<app-login></app-login>
+<app-showemployees></app-showemployees>
+<app-login></app-login>
+<app-register></app-register>
+<app-showemployees></app-showemployees>
+<app-products></app-products>
+<br/><br/>
+<app-cart></app-cart>
+-->
+<!--<mat-icon>home</mat-icon>-->
+<app-header></app-header>
+<marquee><h1>  </h1></marquee>
+<div class ="content" role ="main" style="display: flex;">
+ <!-- <button style="min-width: 100px; max-width: 100px;" (click)="goTopage('tesla')">Tesla</button>-->
+<button style="min-width: 100px; max-width: 100px; color: white" class ="btn btn-black" (click)="goTopage('tesla')"> Tesla</button>
+
+  </div>
+  <router-outlet></router-outlet>
+
+
+  <div class ="content" role ="main" style="display: flex;">
+    <button style="min-width: 100px; max-width: 100px; color: white" class ="btn btn-black" (click)="goTopage('bmw')">BMW</button>
+  </div>
+<router-outlet></router-outlet>
+
+
+<div class ="content" role ="main" style="display: flex; ">
+  <button style="min-width: 100px; max-width: 100px; color: white" class ="btn btn-black" (click)="goTopage('bugatti')">Bugatti</button>
+</div>
+<router-outlet></router-outlet>
+
+<div class ="content" role ="main" style="display: flex;">
+  <button style="min-width: 100px; max-width: 100px; color: white" class ="btn btn-black" (click)="goTopage('porsche')">Porsche</button>
+</div>
+<router-outlet></router-outlet>
+
+<div class ="content" role ="main" style="display: flex;">
+  <button style="min-width: 100px; max-width: 100px; color: white" class ="btn btn-black" (click)="goTopage('mercedes')">Mercedes</button>
+</div>
+<router-outlet></router-outlet>

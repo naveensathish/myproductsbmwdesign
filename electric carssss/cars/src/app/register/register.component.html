@@ -1,0 +1,16 @@
+
+<div class="container">
+<form #regForm="ngForm" (ngSubmit)="register(regForm.value)" novalidate>
+    EmpId:    <input type="number"   name="empId"    ngModel /> <br/>
+    EmpName:  <input type="text"     name="empName"  ngModel /> <br/>
+    Salary:   <input type="number"     name="salary"   ngModel #salary=ngModel  required min="10000"/> <br/>
+    Gender:   <input type="text"     name="gender"   ngModel /> <br/>
+    DOJ:      <input type="date"     name="doj"      ngModel /> <br/>
+    LoginId:  <input type="text"     name="loginId"  ngModel /> <br/>
+    Password: <input type="password" name="password" ngModel /> <br/>
+    <br/>
+    <button class="btn btn-primary" [disabled]="!regForm.valid"> Register </button>
+</form>
+<div *ngIf="salary.errors?.['required']  && salary.touched"> Please Enter Data into the Salary Field </div>
+<div *ngIf="salary.errors?.['min'] && salary.touched"> Please Enter the Minimum Salary 10000 </div>
+</div>
