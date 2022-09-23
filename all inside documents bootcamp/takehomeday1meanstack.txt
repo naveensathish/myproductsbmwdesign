@@ -1,0 +1,60 @@
+<h1> Employees Data</h1>
+<style>
+    table, td, th {
+      border:1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+
+<table align="center">
+    <tr>
+     <th> Emp ID</th>
+     <th> Name </th>
+     <th> Salary </th>
+     <th> Gender </th>
+     <th> Date of Joining</th>
+     <th> LoginId</th>
+     <th> Password </th>
+    </tr>
+
+    <tr *ngFor="let emp of employees">
+        <td> {{emp.empId}} </td>
+        <td> {{emp.empName}}</td>
+        <td> {{emp.salary}}</td>
+        <td> {{emp.gender}}</td>
+        <td> {{emp.doj}}</td>
+        <td> {{emp.loginId}}</td>
+        <td> {{emp.password}}</td>
+
+
+    </tr>
+</table>
+
+
+
+
+import { Component, Oninit } from '@angular/core';
+
+@Component({
+    selector: 'app-showemployees'
+    templateUrl: '.showemployees.component.html'
+    styleUrls:  ['.showemployees.component.css']
+})
+export class Showemployeescomponent implements OnInit{
+    employees: any;
+
+    constructor(){
+        this.employees= [
+        {empId:1, empName:'Harsha', salary: 4546.24, gender:'M', doj:'04-6-2005', loginId:'harsha123', password:'password123'}
+        {empId:1, empName:'naveen', salary: 4546.24, gender:'M', doj:'04-6-2006', loginId:'naveen123', password:'password24'}
+        {empId:1, empName:'barath', salary: 4546.24, gender:'M', doj:'04-6-2007', loginId:'barath123', password:'password45'}
+        {empId:1, empName:'vijay', salary: 4546.24, gender:'F', doj:'04-6-2008', loginId:'vijay123', password:'password5'}
+        {empId:1, empName:'vij', salary: 4546.24, gender:'F', doj:'04-6-2009', loginId:'vij123', password:'password54'}
+
+
+        ];
+    }
+    noOnInit(): void {
+        
+    }
+}

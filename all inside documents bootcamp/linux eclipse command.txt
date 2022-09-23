@@ -1,0 +1,6 @@
+dpkg-query -W -f='${binary:Package}\n' | grep -E -e '^(ia32-)?(sun|oracle)-java' -e '^openjdk-' -e '^icedtea' -e '^(default|gcj)-j(re|dk)' -e '^gcj-(.*)-j(re|dk)' -e '^java-common' | xargs sudo apt-get -y remove
+sudo apt-get -y autoremove
+
+sudo apt-get purge jdk-11*
+
+sudo apt install openjdk-8-jdk openjdk-8-jre

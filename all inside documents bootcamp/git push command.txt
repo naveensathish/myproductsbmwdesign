@@ -1,0 +1,7 @@
+open folder u want to push and cmd
+
+git add .
+
+git commit -m "any message for understanding"
+
+git push

@@ -1,0 +1,12 @@
+1.multiple words
+we faced a challenge to check multiple words fitting in a crossword
+and we finally given a condition to check the value and the index
+
+we have given a condition if the column and row is greater than 10 
+it will return impossible
+
+and it will check for a single word and if the length of the word 
+is less than 2 it will return impossible
+
+and for overlapping if any value interupts the actual word it will
+it will return false

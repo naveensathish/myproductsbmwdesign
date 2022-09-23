@@ -1,0 +1,70 @@
+
+<!--
+<app-test2></app-test2>
+<app-student></app-student>
+<app-login></app-login>
+<app-login></app-login>
+<app-showemployees></app-showemployees>
+<app-login></app-login>
+<app-register></app-register>
+<app-showemployees></app-showemployees>
+<app-products></app-products>
+<br/><br/>
+<app-cart></app-cart>
+-->
+<!--<mat-icon>home</mat-icon>-->
+<!--
+<app-test2></app-test2>
+<app-student></app-student>
+<app-login></app-login>
+<app-login></app-login>
+<app-showemployees></app-showemployees>
+<app-login></app-login>
+<app-register></app-register>
+<app-showemployees></app-showemployees>
+<app-products></app-products>
+<br/><br/>
+<app-cart></app-cart>
+-->
+<!--<mat-icon>home</mat-icon>-->
+<app-header></app-header>
+<marquee><h1>  </h1></marquee>
+<div>
+<div style="display: flex; justify-content: space-between;">
+<div class ="content" role ="main" style="display: flex;">
+ <!-- <button style="min-width: 100px; max-width: 100px;" (click)="goTopage('tesla')">Tesla</button>-->
+<!-- <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('tesla')">  <img src="assets/images/tesla.jfif" style="max-width: 70px;max-height: 70px;"> </button> -->
+
+  </div>
+  <!-- <router-outlet></router-outlet> -->
+
+
+  <div class ="content" role ="main" style="display: flex;">
+    <!-- <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('bmw')"><img src="assets/images/beemer1.jpg" style="max-width: 180px;max-height: 180px;"> </button> -->
+  </div>
+<!-- <router-outlet></router-outlet> -->
+
+
+<div class ="content" role ="main" style="display: flex;">
+  <!-- <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('bugatti')"><img src="assets/images/bugatti.jfif" style="max-width: 100px;max-height: 100px;"></button> -->
+</div>
+<!-- <router-outlet></router-outlet> -->
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+<div class ="content" role ="main" style="display: flex;">
+  <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('bmw')"><img src="assets/images/beemer1.jpg" style="max-width: 178px;max-height: 178px;"> </button>
+</div>
+<!-- <router-outlet></router-outlet> -->
+
+<div class ="content" role ="main" style="display: flex;">
+  <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('porsche')"><img src="assets/images/zz1.jfif" style="max-width: 180px;max-height: 180px;"></button>
+</div>
+
+<div class ="content" role ="main" style="display: flex;">
+  <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('lambo')"> <img src="assets/images/lambo.jpg" style="max-width: 210px;max-height: 210px;"></button>
+</div>
+
+</div>
+<router-outlet></router-outlet>
+</div>

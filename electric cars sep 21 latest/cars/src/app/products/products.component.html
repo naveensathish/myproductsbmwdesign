@@ -1,0 +1,19 @@
+<h1 align="center"> My Products </h1> <br/>
+<div class="container" style="background-color: black;">
+    <div class="row md-10">
+        <div class="col-xl-10" *ngFor="let product of products">
+            <div class="card" style="width: 1120px; height:100%">
+                <img class="card-image" [src]=product.imagePath alt="Card Image Cap"/>
+                <div class="card-body">
+                    <h3 class="card-title" style="text-align: center;"> {{product.productName}} </h3>                    
+                    <p class="card-text"> {{product.description}} </p>
+                    <h4 class="card-text" align="left"> {{product.price | currency:'INR'}} </h4>
+                    <p align="right">
+                    <button class="btn btn-primary" (click)="addToBookings(product)"> BOOK A TEST DRIVE </button>
+                </p>
+                </div>
+            </div>            
+        </div>
+        <br/>
+    </div>
+</div>

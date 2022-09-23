@@ -1,0 +1,13 @@
+//Create API using NodeJS
+
+//import http object
+var http = require('http');
+
+//Create our own server
+var myServer = http.createServer(function(req, res){
+    res.write('Connection Successful!!! Welcome to NodeJS Server with Port 3000');
+    res.end();
+});
+
+myServer.listen(3000);
+console.log("User URL: localhost:3000");

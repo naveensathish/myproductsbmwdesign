@@ -1,0 +1,13 @@
+we have used oops concept
+which is the object oriented programming structure
+which provides resuasbility of the code.
+and in inheritance we have used hierarichal inheritance.
+
+exceptional handling
+it is used to handle the run time errors in a program.
+
+file handling.it is the read and write operation in a file.
+
+arraylist is a part of collection frame work.we have used 
+array list to store list objects.
+

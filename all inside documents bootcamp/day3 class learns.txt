@@ -1,0 +1,9 @@
+html
+css
+bold
+italic 
+underline
+ordered list
+unordered list 
+table 
+image

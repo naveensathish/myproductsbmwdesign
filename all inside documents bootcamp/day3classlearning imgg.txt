@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <h1> Demo on image </h1>
+    
+    <!--
+    <img height="80%" width="80%" src="C:\Windows\Web\Wallpaper\Windows\img0.jpg" alt="Window Desktop Wallpaper Image">
+    
+    <img height="80%" width="80%" src="C:\Angular\HTML&CSS\img2.webp">
+    -->
+
+    <img height="80%" width="80%" src="https://images.pexels.com/photos/33044/sunflower-sun-summer-yellow.jpg">
+
+
+ </body>
+</html>

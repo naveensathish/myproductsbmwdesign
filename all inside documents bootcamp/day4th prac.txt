@@ -1,0 +1,55 @@
+<p>student-register works!</p>
+<form #studentregistration = 'ngForm' (ngSubmit)="Register(studentregistration.value)" novalidate>
+Enter sid : <input type="number" name="sid" ngModel required><br/>
+Enter sname : <input type="text" name="sName" ngModel required><br/>
+Enter dob : <input type="text" name="dob" ngModel required><br/>
+Enter course : <input type="text" name="course" ngModel required><br/>
+Enter fees : <input type="text" name="fees" ngModel required><br/>
+<button [disabled]="!studentregistration.valid">Register </button>
+</form>
+
+
+<table>
+<tr><th>Student ID</th><th>Student Name</th><th>Date Of Birth</th><th>Course</th><th>Fees</th></tr>
+<tr *ngFor = "let student of Student">
+    <td>{{student.sid}}</td>
+    <td>{{student.sName}}</td>
+    <td>{{student.dob}}</td>
+    <td>{{student.course}}</td>
+    <td>{{student.fees}}</td>
+
+</tr>
+</table>
+
+
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-student-register',
+  templateUrl: './student-register.component.html',
+  styleUrls: ['./student-register.component.css']
+})
+export class StudentRegisterComponent implements OnInit {
+ 
+  Student:Array<any>
+  constructor() { 
+   this.Student=[{sid:1,sName:"Supriya",dob:"22-06-20",course:"cse",fees:1090},
+    {sid:2,sName:"Ajay",dob:"12-01-19",course:"cse",fees:10023},
+    {sid:3,sName:"naveen",dob:"9-04-20",course:"mech",fees:11210},
+    {sid:4,sName:"divyesh",dob:"22-06-20",course:"ece",fees:1454}];
+   }
+   
+  
+
+  ngOnInit(): void {
+  }
+  Register(studentregistration: any){
+    this.Student.push({sid : studentregistration.sid, sName: studentregistration.sName, dob: studentregistration.dob, course: studentregistration.course, fees: studentregistration.fees});
+    this.Student.forEach((student : any) =>{
+      if(student.sid==studentregistration.sid){
+        alert("The student id"+ student.sid+"\n already exsits");
+  }      
+    });
+    }
+
+}

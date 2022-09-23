@@ -1,0 +1,167 @@
+.
+app-routing.module.ts
+  {path:'', component:LoginComponent},
+  {path:'login', component:LoginComponent},
+  {path:'register', component:RegisterComponent},
+  {path:'showemp', canActivate:[AuthGuard], component:ShowemployeesComponent},
+  {path:'products', canActivate:[AuthGuard], component:ProductsComponent},
+  {path:'cart', canActivate:[AuthGuard], component:CartComponent},
+  {path:'empbyid', canActivate:[AuthGuard], component:GetempbyidComponent}
+];
+header.component.html
+          </li>
+From Sree Harsha || TalentSprint to Everyone 10:46 AM
+.
+.
+.
+From Sree Harsha || TalentSprint to Everyone 11:13 AM
+https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en
+From Sree Harsha || TalentSprint to Everyone 11:25 AM
+.
+.
+register.component.html
+Country: <select name="country" id="country" ngModel>
+        <option value="IND" selected> INDIA </option>
+        <option value="USA"> USA </option>
+        <option value="CHINA"> CHINA </option>
+    </select>
+    <br/>
+.
+.
+.
+Under app.module.ts
+-------------------
+import {HttpClientModule } from '@angular/common/http';
+
+ imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,            
+    RouterModule,
+    HttpClientModule
+  ],
+From Sree Harsha || TalentSprint to Everyone 11:35 AM
+.
+.
+Under emp.service.ts
+--------------------
+
+import { HttpClient } from '@angular/common/http';
+
+constructor(public httpClient: HttpClient)
+
+getAllCountries(): any {
+    return this.httpClient.get('https://restcountries.com/v3.1/all');
+  }
+.
+.
+.
+register.component.ts
+---------------------
+ countries: any;
+
+  constructor(public service: EmpService)
+
+ngOnInit(): void {
+    this.service.getAllCountries().subscribe((result: any) => console.log(result));
+  }
+From Sree Harsha to Everyone 12:10 PM
+https://www.mongodb.com/try/download/shell
+From Aneesh Bhavirisetty ↓ Aneeshanee9160 to Everyone 12:42 PM
+sry Manjula it was bymistake
+mongoDb was not working for me so I was talking with shubham
+From Sree Harsha to Everyone 12:56 PM
+.
+..
+MongoDB Commands
+1.Show Databases
+show dbs
+
+2.Create own database (test)
+use npci;
+
+3.Show Databases
+show dbs
+Note: npci database will not be displayed
+unless you add a collection(table).
+
+4.Create a collection(table) under npci database
+db.createCollection("Student");
+
+show dbs;
+
+5.Add(insert) record(row) into the student collection(table).
+
+db.student.insert(
+{sname:'Pasha', course:'JAVA', fees:9999.99});
+
+db.student.insert({sname:'Harsha', course:'Angular', fees:9898.98});
+From Sree Harsha to Everyone 01:02 PM
+.
+.
+db.student.insert({id:1, sname:'Indira', course:'Python', fees:8989.89});
+db.student.insert({id:2, sname:'Manjula', course:'Java', fees:999.99});
+From Sree Harsha to Everyone 01:08 PM
+9.Show available collections(tables) in npci database
+show collections;
+
+
+10.drop the student collection from npci database
+db.Student.drop();
+true
+show collections;
+student
+
+db.student.drop();
+true
+show collections;
+
+
+
+11.Show Databases
+show dbs
+From Sree Harsha to Everyone 01:18 PM
+.
+.
+..
+11.Show Databases
+show dbs
+
+Note: here once again the npci database will not be displayed as all the collections from the database has removed.
+
+
+
+12.Create a collection(table) under npci database
+db.createCollection("student");
+
+show dbs;
+
+
+13. Add the records into the student collection
+db.student.insert({sname:'Pasha', course:'JAVA', fees:9999.99});
+db.student.insert({sname:'Harsha', course:'Angular', fees:9898.98});
+db.student.insert({sname:'Indira', course:'Python', fees:8989.89});
+db.student.insert({sname:'Manjula', course:'Java', fees:999.99});
+
+
+14. display the student collection
+db.student().find()
+15.Insert multiple records into the student collection
+db.stud
+From Sree Harsha to Everyone 01:32 PM
+.
+.
+16.Display a particular record from the student collection
+db.student.find({course:{$eq:'Angular'}})
+db.student.find({fees:{$gt:8000}})
+db.student.find({fees:{$lt:8000}})
+.
+.
+15.Insert multiple records into the student collection
+db.student.insertMany([{name:'Venkat', course:'NodeJS', fees:8787.98}, {name:'Gopi', course:'MongoDB', fees;7878.78}]);
+db.student.find({fees:{$gte:7878.78}})
+db.student.find({fees:{$lte:7878.78}})
+db.student.find({course:{$in:['Angular', 'MongoDB']}})
+db.student.find({sname:{$in:['Pasha', 'Harsha']}})
+From Sree Harsha to Everyone 01:37 PM
+loginId:"harsha@gmail.com", password:"password"});

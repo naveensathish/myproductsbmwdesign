@@ -1,0 +1,15 @@
+retreivedData: any;
+  cartItems: any;
+
+  constructor() {
+    this.cartItems = [];
+    localStorage.clear();
+   }
+
+  ngOnInit(): void {
+  }
+
+  showCartItems() {
+    this.retreivedData = localStorage.getItem('cartItems');
+    this.cartItems = JSON.parse(this.retreivedData);
+  }

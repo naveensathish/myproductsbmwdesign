@@ -1,0 +1,188 @@
+app.comp.html
+
+
+<!--
+<app-test2></app-test2>
+<app-student></app-student>
+<app-login></app-login>
+<app-login></app-login>
+<app-showemployees></app-showemployees>
+<app-login></app-login>
+<app-register></app-register>
+<app-showemployees></app-showemployees>
+<app-products></app-products>
+<br/><br/>
+<app-cart></app-cart>
+-->
+<!--<mat-icon>home</mat-icon>-->
+<app-header></app-header>
+<marquee><h1>  </h1></marquee>
+<div>
+<div style="display: flex; justify-content: space-between;">
+<div class ="content" role ="main" style="display: flex;">
+ <!-- <button style="min-width: 100px; max-width: 100px;" (click)="goTopage('tesla')">Tesla</button>-->
+<button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('tesla')"> Tesla</button>
+
+  </div>
+  <!-- <router-outlet></router-outlet> -->
+
+
+  <div class ="content" role ="main" style="display: flex;">
+    <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('bmw')">BMW</button>
+  </div>
+<!-- <router-outlet></router-outlet> -->
+
+
+<div class ="content" role ="main" style="display: flex;">
+  <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('bugatti')">Bugatti</button>
+</div>
+<!-- <router-outlet></router-outlet> -->
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+<div class ="content" role ="main" style="display: flex;">
+  <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('porsche')">Porsche</button>
+</div>
+<!-- <router-outlet></router-outlet> -->
+
+<div class ="content" role ="main" style="display: flex;">
+  <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('mercedes')">Mercedes</button>
+</div>
+
+<div class ="content" role ="main" style="display: flex;">
+  <button style="min-width: 400px; max-width: 400px; font-size: 20px; color: white" class ="btn btn-black" (click)="goTopage('lambo')">Lamborghini</button>
+</div>
+
+</div>
+<router-outlet></router-outlet>
+</div>
+
+
+
+
+lambo.html
+
+<h1 align="center" style="color: white ;"> Lamborghini <img src="assets/images/lambo.jpg" style="max-width: 100px;max-height: 100px;"> </h1>
+<div class="container" style="background-color: black; border:0px solid black;">
+    <div class="row md-10" style="background-color: black; border:0px solid black;">
+        <div class="col-xl-10" *ngFor="let lamboproduct of lambo" style="background-color: black; border:0px solid black;">
+            <div class="card" style="width: 1120px; height:100%;background-color: black; border:0px solid black;">
+                <img class="card-image" [src]=lamboproduct.imagePath alt="Card Image Cap"/>
+                <div class="card-body" style="background-color: black; border:0px solid black;">
+                    <h3 class="card-title" style="text-align: center;color: white;;"> {{lamboproduct.productName}} </h3>                    
+                    <p class="card-text" style="color: white;"> {{lamboproduct.description1}} </p>
+                    <p class="card-text" style="color: white;"> {{lamboproduct.description2}} </p>
+                    <p align="right">
+                    <button class="btn btn-black" style="color: white;"> BOOK A TEST DRIVE </button>
+                 <!-- <button class="btn btn-black" style="color: white;"> Know More </button> -->
+                </p>
+                </div>
+            </div>            
+        </div>
+        <br/>
+    </div>
+</div>
+
+
+
+
+<!-- <div class="row">
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info">   col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info   ">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info   ">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info">   col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info   ">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info   ">col-xl-1</div>
+</div> -->
+
+
+<!--
+<div class="container">
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-6">
+            <div class="card">
+                <img class="card-image" src="assets/images/10001.jpg" />
+                <div class="card-body">
+                    <h2 class="card-title" style="text-align: center;"> Nokia </h2>
+                    <h3 class="card-text"> ₹26000.00 </h3>
+                    <p class="card-test"> No cost EMI from Rs.1,499. Standard EMI also availableView Plans </p>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-6">
+            <div class="card">
+                <img class="card-image" src="assets/images/10002.jpg" />
+                <div class="card-body">
+                    <h2 class="card-title" style="text-align: center;"> Nokia </h2>
+                    <h3 class="card-text"> ₹36000.00 </h3>
+                    <p class="card-test"> No cost EMI from Rs.1,499. Standard EMI also availableView Plans </p>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-6">
+            <div class="card">
+                <img class="card-image" src="assets/images/10003.jpg" />
+                <div class="card-body">
+                    <h2 class="card-title" style="text-align: center;"> Nokia </h2>
+                    <h3 class="card-text"> ₹40000.00 </h3>
+                    <p class="card-test"> No cost EMI from Rs.1,499. Standard EMI also availableView Plans </p>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
+
+lambo.ts
+import { Component, OnInit } from '@angular/core';
+import { EmpService } from '../emp.service';
+
+@Component({
+  selector: 'app-lambo',
+  templateUrl: './lambo.component.html',
+  styleUrls: ['./lambo.component.css']
+})
+export class LamboComponent implements OnInit {
+
+  lambo: any;
+  bookings: any;
+
+  constructor(public service: EmpService) {
+
+    this.bookings = [];
+
+    this.lambo = [
+      {productId: 1006, productName: 'Lamborghini Aventador', price: '', imagePath: 'assets/images/l1.jpg',
+      description1: 'Battery: 93.4 kWh 800 V lithium-ion', description2: 'Dimensions: 4,963 mm L x 1,966 mm W x 1,378 mm H'},
+
+      {productId: 1006, productName: 'Lamborghini Sian', price: '', imagePath: 'assets/images/l3.jpg',
+      description1: 'Battery: 93.4 kWh 800 V lithium-ion', description2: 'Dimensions: 4,963 mm L x 1,966 mm W x 1,378 mm H'},
+
+    ];
+
+    }
+    ngOnInit(): void {
+    }
+    addToCart(lamboproduct: any) {
+      this.bookings.push(lamboproduct);
+      localStorage.setItem('cartItems', JSON.stringify(this.bookings));
+  
+      this.service.addToCart(lamboproduct);
+    }
+  
+  
+
+}
+
+
+

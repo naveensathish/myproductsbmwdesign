@@ -1,0 +1,22 @@
+<!--
+Enter Login ID : <input type="text" [(ngModel)] = "lId" /> <br/>
+Enter Password : <input type="password" [(ngModel)] = "pwd" /> <br/> <br/>
+<button (click)="loginSubmit()"> Login </button>
+-->
+
+<form #loginForm="ngForm" (ngSubmit)="submitForm(loginForm.value)">
+Enter Login ID : <input type="text"     name="loginId"  ngModel /> <br/>
+Enter Password : <input type="password" name="password" ngModel /> <br/>
+<button> Login </button>
+</form>
+
+
+
+submitForm(loginForm: any) {
+    console.log(loginForm.value);
+    if (loginForm.loginId === "HR" && loginForm.password === "HR") {
+      alert("welcome to HR Home Page")
+    } else {
+      alert("Welcome to Employee Home Page")
+    }
+  }

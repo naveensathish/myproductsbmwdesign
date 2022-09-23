@@ -1,0 +1,11 @@
+i,e..if the row and column is greater than or =10 it will
+return impossible  
+
+for single word it will check for the length of the word and if
+it is within range it will return true
+
+for multiple words it will check whether the index is equal
+and if the condition satisfies it will return true
+  
+i,e..if any index overlaps the actual word then
+it will return impossible

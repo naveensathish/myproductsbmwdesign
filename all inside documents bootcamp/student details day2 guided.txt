@@ -1,0 +1,55 @@
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'app-student',
+  templateUrl: './student.component.html',
+  styleUrls: ['./student.component.css']
+})
+export class StudentComponent implements OnInit {
+  students: any;
+
+  constructor() { 
+    this.students = [
+      {Sid:1, Sname:'Naveen', dob:'01-01-2001', course:'maths', fees:'70$'},
+      {Sid:2, Sname:'barath', dob:'13-10-2001', course:'physics', fees:'60$'},
+      {Sid:3, Sname:'luffy', dob:'25-12-2000', course:'english', fees:'90$'},
+      {Sid:4, Sname:'mike', dob:'28-12-2005', course:'computer science'  , fees:'40$'},
+      {Sid:5, Sname:'vij', dob:'27-12-2000', course:'chemistry', fees:'51$'}
+
+    ];
+  }
+
+  ngOnInit(): void {
+  }
+
+}
+
+
+
+<h1> Student Details </h1>
+
+<style>
+    table, td, th {
+        border:1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<table> align="center">
+    <tr>
+        <th> Sid </th>
+        <th> Sname </th>
+        <th> dob </th>
+        <th> course </th>
+        <th> fees </th>
+    </tr>
+
+    <tr *ngFor="let stu of students">
+        <td> {{stu.Sid}} </td>
+        <td> {{stu.Sname}} </td>
+        <td> {{stu.dob}} </td>
+        <td> {{stu.course}} </td>
+        <td> {{stu.fees}} </td>
+    </tr>
+
+    </table>

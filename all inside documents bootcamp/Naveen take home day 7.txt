@@ -1,0 +1,32 @@
+1.List all the employees.
+-> db.employees.find();
+
+2.Find the employee with whose name is Steve.
+-> db.employees.find({name:{$eq:'Steve'}});
+
+3.Find all employees whose age is greater than 30.
+-> db.employees.find({age:{$gt:30}});
+
+4.Find the employee whose extension is 2143.
+-> db.employees.find({'phone.ext':{$eq:'2143'}});
+
+5.Find all employees that are over 30.
+-> db.employees.find({age:{$gt:30}});
+
+6.Find all employees that are less than or equal to 30.
+-> db.employees.find({age:{$lte:30}});
+
+7.Find all the employees whose favorite food is pizza.
+-> db.employees.find({'favorites.food':{$eq:'pizza'}});
+
+8.Change Willy’s personal phone number to "93-123-45-67".
+-> db.employees.updateOne({name:"Willy"},{$set:{'phone.personal':"93-123-45-67"}});
+
+9.Change Bob’s privilege to normal user.
+-> db.employees.updateOne({name:"Bob"},{$set:{privileges:"user"}});
+
+10.Find all employees whose favorite artist is equal to Picasso.
+-> db.employees.find({'favorites.artist':{$eq:"Picasso"}});
+
+11.Delete the user John.
+-> db.employees.deleteOne({name:{$eq:"John"}});

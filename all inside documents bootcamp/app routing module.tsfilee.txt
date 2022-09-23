@@ -1,0 +1,9 @@
+app-routing.module.ts
+const routes: Routes = [
+  {path:'', component:LoginComponent},
+  {path:'login', component:LoginComponent},
+  {path:'register', component:RegisterComponent},
+  {path:'showemp', canActivate:[AuthGuard], component:ShowemployeesComponent},
+  {path:'products', canActivate:[AuthGuard], component:ProductsComponent},
+  {path:'cart', canActivate:[AuthGuard], component:CartComponent}
+];

@@ -1,0 +1,12 @@
+auth.guard.ts
+constructor(public empService: EmpService) {  // <--- Dependency Injection
+  }
+
+  canActivate(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
+    //return true;
+    return this.empService.getUserLogged();
+
+    //getUserLogged() from EmpService, will be used with return statement
+  }

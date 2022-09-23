@@ -1,0 +1,194 @@
+
+<h1 align="center" style="color: white ;"> Mercedes <img src="assets/images/mercedes.jfif" style="max-width: 100px;max-height: 100px;"> </h1>
+<div class="container" style="background-color: black; border:0px solid black;">
+    <div class="row md-10" style="background-color: black; border:0px solid black;">
+        <div class="col-xl-10" *ngFor="let mercedesproduct of mercedes" style="background-color: black; border:0px solid black;">
+            <div class="card" style="width: 1120px; height:100%;background-color: black; border:0px solid black;">
+                <img class="card-image" [src]=mercedesproduct.imagePath alt="Card Image Cap"/>
+                <div class="card-body" style="background-color: black; border:0px solid black;">
+                    <h3 class="card-title" style="text-align: center;color: white;;"> {{mercedesproduct.productName}} </h3>                    
+                    <p class="card-text" style="color: white;"> {{mercedesproduct.description1}} </p>
+                    <p class="card-text" style="color: white;"> {{mercedesproduct.description2}} </p>
+                    <p align="right">
+                    <button class="btn btn-black" style="color: white; border:1px solid white;"> BOOK A TEST DRIVE </button>
+                </p>
+                </div>
+            </div>            
+        </div>
+        <br/>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="container my-5">
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: black; border: 1px solid- black;"
+            >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text- mb-4 font-weight-bold" style="font-size: 18px;">
+                    Contact</h6>
+              <p style="color:grey ; ">
+                Find a Dealer<br/>
+                Request a Test Drive<br/>
+                Career<br/>
+                Contact Us
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            
+                <h6 class="text-uppercase mb-4 font-weight-bold" >
+                        Quick Links</h6>
+              
+              <p style="color:grey ; ">
+                Build your MERCEDES<br/>
+                Services<br/>
+                MERCEDES Safety<br/>
+                <!-- EMI Calculator<br/> -->
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+           <h6 class="text-uppercase mb-4 font-weight">
+            
+                Experience MERCEDES</h6>
+                <p style="color:grey ; ">
+                MERCEDES Group <br/>
+                MERCEDES Excellence Club <br/>
+                <!-- MERCEDES Motorrad <br/> -->
+            </p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <!-- <div class="col-md-7 col-lg-2 col-xl-4 mx-auto mt-3"> -->
+                <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Visit us on</h6>
+  
+              <!-- Instagram -->
+              <a href="https://www.instagram.com/mercedesbenz/">
+                
+                 <img src="assets/images/insta.png" style="max-width: 45px;max-height: 45px;">
+                 
+                </a>
+  
+              <!-- YouTube -->
+              <a href="https://youtube.com/mercedesbenztv">
+                <img src="assets/images/youT.png" style="max-width: 45px;max-height: 45px;">
+              </a>
+  
+              <!-- FaceBook -->
+              <a href="https://www.facebook.com/mercedesbenz/">
+                <img src="assets/images/fb.png" style="max-width: 45px;max-height: 45px;">
+            
+              </a>
+           
+              <!-- Twitter -->
+              <a href="https://twitter.com/mercedesbenz">
+                <img src="assets/images/tw.png" style="max-width: 45px;max-height: 45px;">
+              </a>
+              
+            </div>
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        
+        <a style="margin-right: 895px;"> © MERCEDES AG 2022</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+
+<!-- <div class="row">
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info">   col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info   ">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info   ">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info">   col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info   ">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-success">col-xl-1</div>
+    <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-info   ">col-xl-1</div>
+</div> -->
+
+
+<!--
+<div class="container">
+    <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-6">
+            <div class="card">
+                <img class="card-image" src="assets/images/10001.jpg" />
+                <div class="card-body">
+                    <h2 class="card-title" style="text-align: center;"> Nokia </h2>
+                    <h3 class="card-text"> ₹26000.00 </h3>
+                    <p class="card-test"> No cost EMI from Rs.1,499. Standard EMI also availableView Plans </p>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-6">
+            <div class="card">
+                <img class="card-image" src="assets/images/10002.jpg" />
+                <div class="card-body">
+                    <h2 class="card-title" style="text-align: center;"> Nokia </h2>
+                    <h3 class="card-text"> ₹36000.00 </h3>
+                    <p class="card-test"> No cost EMI from Rs.1,499. Standard EMI also availableView Plans </p>                    
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 col-6">
+            <div class="card">
+                <img class="card-image" src="assets/images/10003.jpg" />
+                <div class="card-body">
+                    <h2 class="card-title" style="text-align: center;"> Nokia </h2>
+                    <h3 class="card-text"> ₹40000.00 </h3>
+                    <p class="card-test"> No cost EMI from Rs.1,499. Standard EMI also availableView Plans </p>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+

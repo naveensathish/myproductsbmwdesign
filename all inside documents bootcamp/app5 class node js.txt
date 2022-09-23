@@ -1,0 +1,25 @@
+app5.js
+//ExpressJS
+//localhost:3000/employees
+app.get("/employees", function(req, res) {
+    var empList = '';    
+    dataFile.employees.forEach(function(employee) {
+//localhost:3000/employees/1
+app.get("/employees/:index", function(req, res) {
+    var employee = dataFile.employees[req.params.index];
+    res.send(` 
+    <li>
+        <h3> ${employee.id}     </h3>
+        <h3> ${employee.name}   </h3>
+        <h3> ${employee.salary} </h3>
+    </li>
+` );
+});
+From Sree Harsha || TalentSprint to Everyone 01:24 PM
+app.server = app.listen(3000, function() {
+    console.log('Server Started on PortNo 3000');
+})
+.
+.
+.
+npm install body-parser --save

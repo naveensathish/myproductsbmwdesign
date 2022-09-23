@@ -1,0 +1,73 @@
+<form #loginForm="ngForm" (ngSubmit)="submitForm(loginForm.value)" class="form-group" novalidate>
+From Sree Harsha || TalentSprint to Everyone 12:14 PM
+.
+.
+.
+Login.component.ts
+submitForm(loginForm: any) {    
+    console.log(loginForm);
+
+    if (loginForm.loginId === "HR" && loginForm.password === "HR") {
+      alert("welcome to HR Home Page");
+    } else {      
+      this.employees.forEach((employee: any) => {
+        if(loginForm.loginId === employee.loginId && loginForm.password === employee.password) {
+          alert("Hi! " + employee.loginId + "\nWelcome to Employee Home Page");
+
+          localStorage.setItem('employee', JSON.stringify(employee));
+        }
+      });    
+    }    
+  }
+}
+.
+..
+.
+showemployees.component.html
+<div class="container">
+<button class="btn btn-primary" (click)="showUser()"> Show User </button> <br/><br/>
+
+Welcome: {{loginId}} !
+
+</div>
+<br/><br/>
+.
+.
+.
+.
+showemployees.component.ts
+loginId: any;
+  employee: any;
+  retreivedData: any;
+constructor() {
+    this.loginId = ''; 
+}
+showUser() {
+    this.retreivedData = localStorage.getItem('employee');
+    this.employee = JSON.parse(this.retreivedData);
+    this.loginId = this.employee.loginId;
+    localStorage.clear();
+  }
+From Sree Harsha || TalentSprint to Everyone 12:37 PM
+.
+.
+.
+products: any;
+this.products = [
+      {productId: 1001, productName: 'MOBILE', price: 19999.99,  imagePath: 'assets/images/10001.jpg',
+      description: 'No cost EMI from Rs.1,499. Standard EMI also availableView Plans'},
+
+      {productId: 1002, productName: 'MOBILE', imagePath: 'assets/images/10002.jpg', 
+      description: 'Nokia A6 Pro Brand', price: 13499.99},
+     
+      {productId: 1003, productName: 'MOBILE', imagePath: 'assets/images/10003.jpg',
+      description: 'Samsung J7 Pro Second Edition', price: 19999.99},
+{productId: 1004, productName: 'MOBILE', price: 13499.99, imagePath: 'assets/images/10004.jpg',
+      description: 'Get upto Rs.11400 off with Exchange Special PriceGet extra Rs.2000 off '},
+     
+      {productId: 1005, productName: 'MOBILE', price: 19999.99, imagePath: 'assets/images/10005.jpg',
+      description: 'Samsung J7 Pro Second Edition'},
+     
+      {productId: 1006, productName: 'MOBILE', price: 13499.99, imagePath: 'assets/Images/10006.jpg',
+      description: 'Nokia A6 Pro Brand'},
+    ];

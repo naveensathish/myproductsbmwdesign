@@ -1,0 +1,62 @@
+public  class Java_In_Class_Day_01_6_CountLeftTruncatablePrimes {
+	   public static int getCountOfLeftTruncatablePrimes(int start_val, int end_val) {
+		   int c = 0;
+		   if(start_val > end_val){
+		       return -1;
+		   }
+		   else if(start_val < 0 || end_val < 0){
+		       return -2;
+		   }
+		   else if(start_val == 0 || end_val == 0){
+		       return -3;
+		   }
+		   else{
+		   for (int i = start_val; i <= end_val; i++) {
+			   if (isLeftTruncatablePrime(i))
+				   c += 1;
+		   }}
+		   return c;
+	   }
+	   public static boolean isLeftTruncatablePrime(int num) 
+	   {
+		   int n_digit = 0;
+		   int n = num;
+		   while(n > 0) 
+		   {
+    			n_digit++;
+    			n = n/10;
+    			
+    			if(n == 0)
+    			break;
+	        }
+
+		   if(isPrime(num) == false) {
+			   return false;
+		   }
+		   for(int i = n_digit-1; i >= 1; i--) 
+		   {
+		       
+			   int s=(int)Math.pow(10, i);
+			   num = num % s;
+			   if(isPrime(num) == false)
+				   return false;
+		    }
+		    
+		    return true;
+	    }
+	       public static boolean isPrime(int num) {
+		   int count = 0;
+		   for(int i = 1; i <= num; i++) {
+			   if(num % i == 0)
+				   count++;
+		   }
+		   if(count == 2)
+			   return true;
+		   return false;
+	   }
+	 
+	   public static void main(String[] args) {
+		   Java_In_Class_Day_01_6_CountLeftTruncatablePrimes obj=new Java_In_Class_Day_01_6_CountLeftTruncatablePrimes();
+		   System.out.println(obj.getCountOfLeftTruncatablePrimes(1,50));
+	   }
+}

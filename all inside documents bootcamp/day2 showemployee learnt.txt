@@ -1,0 +1,12 @@
+<tr *ngFor="let emp of employees" align="center">
+        <td> {{emp.empId}} </td>
+        <td align="left"> {{emp.empName | uppercase}} </td>
+        <td> {{emp.salary  | currency:'USD'}} </td>
+        <td> {{emp.gender  | lowercase}} </td>
+        <td align="left"> {{emp.doj     | date:'dd-MMM-yyyy'}} </td>
+        <td align="left"> {{emp.loginId | lowercase}} </td>
+        <!-- <td> {{emp.password}} </td> -->
+        <td> {{emp.doj     | exp}} </td>
+    </tr>
+
+</table>

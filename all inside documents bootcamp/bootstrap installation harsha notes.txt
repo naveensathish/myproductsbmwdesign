@@ -1,0 +1,25 @@
+BootStrap
+---------
+Step-1
+------
+npm install bootstrap@latest --save
+You can find it on package.json file
+
+Step-2
+------
+Open Node_Module and copy the relative path of the bootstrap
+
+node_modules\bootstrap\dist\css\bootstrap.min.css
+
+
+Step-3
+------
+Open angular.json, go to around line no 25 where it is provided with styles array.
+Now paste the copied path, modify the backward slash(\) with the forward(/) as shown below:
+
+"styles": [
+	"src/styles.css",
+    "node_modules/bootstrap/dist/css/bootstrap.min.css"
+],
+
+Done.
